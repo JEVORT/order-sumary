@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&family=Red+Hat+Display:wght@300;900&display=swap");
+
+:root {
+  --colorFondo: hsl(225, 100%, 94%);
+  --color2: #fcb173;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--colorFondo);
+  background-image: url(../assets/img/pattern-background-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  width: 328px;
+  height: 515px;
+  border-radius: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+}
+
+.card-header {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body-title {
+  margin-top: 33px;
+  font-size: 20px;
+  color: rgb(61, 61, 61);
+  font-weight: 800;
+}
+
+.card-body-text {
+  color: hsl(240, 0%, 61%);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: -2px;
+  width: 78%;
+  line-height: 1.5;
+}
+
+.card-resumen {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 85%;
+  height: 70px;
+  margin-left: 30px;
+  background-color: rgba(240, 250, 250, 0.8);
+  border-radius: 20px;
+}
+
+.card-resumen-data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: auto;
+  margin-left: 20px;
+}
+
+.card-resumen-data-icon {
+  display: flex;
+  width: 37px;
+}
+
+.card-resumen-data-icon-img {
+  width: 100%;
+}
+
+.card-resumen-data-detail-pago {
+  font-size: 13px;
+  margin: opx;
+  font-weight: 900;
+  margin-top: 10px;
+  color: rgb(49, 49, 49);
+}
+
+.card-resumen-data-detail-prices {
+  margin-top: -10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.card-resumen-change {
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  color: hsl(245, 93%, 41%);
+  cursor: pointer;
+}
+
+.card-resumen-change:hover {
+  color: hsl(258, 85%, 18%);
+  font-weight: bold;
+  color: hsl(249, 63%, 64%);
+  text-decoration: none;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 85%;
+  height: 65px;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.card-footer-succes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  height: 38px;
+  gap: 10px;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  cursor: pointer;
+  border-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 5px 10px rgba(56, 5, 241, 0.5);
+}
+
+.card-footer-succes:hover {
+  background-color: hsl(249, 63%, 64%);
+  border-color: hsl(249, 63%, 64%);
+}
+
+.card-footer-cancel {
+  display: flex;
+  height: 40px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 800;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: none;
+  color: rgb(145, 145, 145);
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.card-footer-cancel:hover {
+  color: rgb(49, 49, 49);
+  font-size: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
